@@ -1,7 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc4a6979-dc01-4cb4-8dae-f0efe185751b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Strix.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/axios/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/BurgerButton/BurgerButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/BurgerButton/BurgerButton.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/NavigationSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/NavigationSide.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideLogo/SideLogo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideLogo/SideLogo.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/AdminMenu/AdminMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/NastavnikMenu/NastavnikMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/SekretarMenu/SekretarMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/SideItem/SideItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/SideItem/SideItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/SideMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/SideMenu.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideMenu/StudentMenu/StudentMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/NavigationTop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/NavigationTop.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountCredentials/AccountCredentials.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountCredentials/AccountCredentials.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountInfo/AccountInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountInfo/AccountInfo.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountInfo/Info/Info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountInfo/Info/Info.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountInfo/Logout/Logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountInfo/Logout/Logout.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/AccountItem/AccountItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/PageTitle/PageTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/PageTitle/PageTitle.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/TopMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationTop/TopMenu/TopMenu.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Obavestenja/ObavestenjeSidebar/ObavestenjeSidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Obavestenja/ObavestenjeSidebar/ObavestenjeSidebar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Godine/Godine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Godine/Godine.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupa/Grupa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupa/Grupa.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupe.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/PregledGrupaPoGodinama/PregledGrupaPoGodinama.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/PregledGrupaPoGodinama/PregledGrupaPoGodinama.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/PregledStudenataPoGodinama/PregledStudenataPoGodinama.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/PregledStudenataPoGodinama/PregledStudenataPoGodinama.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Spisak/Spisak.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Spisak/Spisak.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Studenti/Student/Student.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Studenti/Student/Student.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Studenti/Studenti.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pregled/Studenti/Studenti.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Raspored/Raspored.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Raspored/Raspored.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Raspored/columns/ispitiColumns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Raspored/columns/kolokvijumskaColumns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Raspored/columns/predavanjaColumns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Fieldset/Fieldset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Filter/Filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Filter/Filter.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/MainContent/MainContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/MainContent/MainContent.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/RadioGroup/RadioGroup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/Option/Option.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/Option/Option.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Control/Control.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Control/Control.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Controls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Controls.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/SharableLists.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/SharableLists.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/SpinnerCircle/SpinnerCircle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/SpinnerCircle/SpinnerCircle.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/SpinnerDots/SpinnerDots.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/SpinnerDots/SpinnerDots.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Authentication/Authentication.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Authentication/Authentication.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Authentication/Logout/Logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Home/Home.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/PregledIzbornihGrupa/PregledIzbornihGrupa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/PregledIzbornihGrupa/PregledIzbornihGrupa.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/fromState/formState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/SiteConf/AdminConf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/SiteConf/LoginConf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/SiteConf/NastavnikConf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/SiteConf/SekretarConf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/SiteConf/StudentConf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/SpisakStudenata/SpisakStudenata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/SpisakStudenata/SpisakStudenata.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/auth_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/grupe_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/page_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/predmeti_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/raspored_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/studenti_action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/grupe_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/page_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/predmeti_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/raspored_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/studenti_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/utils/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/studservice_front-end.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studservice_frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RWo8averAtxnIexwH0ZIrEFBsb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../studservice_frontend_old" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Spinner" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Modal" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Backdrop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\containers\IzborneGrupe" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\Navigation\NavigationSide\SideMenu" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\assets" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\Navigation" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc4a6979-dc01-4cb4-8dae-f0efe185751b" name="Default Changelist" comment="" />
+      <created>1569792054950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569792054950</updated>
+      <workItem from="1569792056559" duration="4488000" />
+      <workItem from="1569829512386" duration="30291000" />
+      <workItem from="1569864796282" duration="3395000" />
+      <workItem from="1569935911889" duration="21335000" />
+      <workItem from="1569971668904" duration="5280000" />
+      <workItem from="1570018990132" duration="3111000" />
+      <workItem from="1570119572923" duration="599000" />
+      <workItem from="1570139325603" duration="5076000" />
+      <workItem from="1570193329451" duration="16953000" />
+      <workItem from="1570283821782" duration="5003000" />
+      <workItem from="1570374258664" duration="502000" />
+      <workItem from="1570396807167" duration="9254000" />
+      <workItem from="1570407755661" duration="123000" />
+      <workItem from="1570407895036" duration="92000" />
+      <workItem from="1570408000953" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,0 +1,7 @@
+.SharableLists {
+    display: flex;
+    width: 100%;
+}
+.SharableLists > div {
+    flex: 1;
+}

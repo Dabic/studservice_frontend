@@ -1,0 +1,26 @@
+.Info {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+}
+.Info div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+}
+.Info div span:nth-child(1){
+    font-size: 1.2rem;
+}
+.Info div span:nth-child(2){
+    font-size: 1rem;
+}
+.Info div span:nth-child(3){
+    font-size: 0.9rem;
+}
+.Info img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin-right: 5px;
+}

@@ -1,0 +1,11 @@
+.MainContent {
+    margin: 95px 20px 20px 310px;
+    min-height: 85vh;
+    height: 100%;
+}
+@media (max-width: 1000px) {
+    .MainContent {
+        margin: 95px 20px 20px 20px;
+        min-height: 85vh;
+    }
+}

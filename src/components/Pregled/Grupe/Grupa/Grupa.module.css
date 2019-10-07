@@ -1,0 +1,36 @@
+.Grupa {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    font: inherit;
+    margin: 5px 0;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+.Grupa:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+.GrupaStart {
+    padding: 10px;
+}
+.GrupaEnd {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.GrupaEnd p {
+    margin: 0 10px 0 0;
+}
+.GrupaEnd div {
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+.GrupaEnd div i {
+    padding: 10px 15px;
+}
+.GrupaEnd div:hover{
+    background-color: salmon;
+}

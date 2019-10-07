@@ -1,26 +1,66 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react'
+import {withRouter} from "react-router";
+import {Redirect} from "react-router";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {connect} from 'react-redux'
+import * as actions from './store/actions/index'
+import AdminConf from "./containers/SiteConf/AdminConf";
+import LoginConf from "./containers/SiteConf/LoginConf";
+import StudentConf from "./containers/SiteConf/StudentConf";
+import SekretarConf from "./containers/SiteConf/SekretarConf";
+import NastavnikConf from "./containers/SiteConf/NastavnikConf";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = props => {
+    useEffect(() => {
+        props.authAutoSetState()
+    })
+    let routes = null
+    switch(props.authenticatedAs){
+        case 'Administrator':
+            routes = (
+                <React.Fragment>
+                    <Redirect to='/studserviceapp' />
+                    <AdminConf/>
+                </React.Fragment>
+            )
+            break
+        case 'Sekretar':
+            routes = (
+                <React.Fragment>
+                    <Redirect to='/studserviceapp' />
+                    <SekretarConf/>
+                </React.Fragment>
+            )
+            break
+        case 'Student':
+            routes = (
+                <React.Fragment>
+                    <Redirect to='/studserviceapp' />
+                    <StudentConf/>
+                </React.Fragment>
+            )
+            break
+        case 'Nastavnik':
+            routes = (
+                <React.Fragment>
+                    <Redirect to='/studserviceapp' />
+                    <NastavnikConf/>
+                </React.Fragment>
+            )
+            break
+        default:
+            routes = <LoginConf/>
+    }
+    return routes
 }
-
-export default App;
+const mapStateToProps = state => {
+    return {
+        authenticatedAs: state.authReducer.authenticatedAs
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        authAutoSetState: () => dispatch(actions.authAutoSetState())
+    }
+}
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

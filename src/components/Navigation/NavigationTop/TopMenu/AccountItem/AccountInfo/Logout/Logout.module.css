@@ -1,0 +1,13 @@
+.Logout {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #cccccc;
+}
+.Logout a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.Logout a:hover{
+    color: red;
+}

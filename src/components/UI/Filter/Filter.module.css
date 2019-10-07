@@ -1,0 +1,20 @@
+.FilterContainer {
+    position: sticky;
+    top: 0;
+}
+.Filter {
+    text-indent: 30px;
+    padding: 5px;
+    width: 100%;
+}
+.NoBorder {
+    border: 0;
+    border-top: 1px solid #cccccc;
+    outline: none;
+}
+.FilterIcon {
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    font-size: 15px;
+}

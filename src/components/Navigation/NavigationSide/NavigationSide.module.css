@@ -1,0 +1,19 @@
+.NavigationSide {
+    position: fixed;
+    z-index: 4;
+    background-color: #3A4E61;
+    height: 100%;
+    width: 300px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+@media (max-width: 1000px){
+    .NavigationSide {
+        display: none;
+    }
+}
+.DisplaySideNav {
+    display: block;
+}

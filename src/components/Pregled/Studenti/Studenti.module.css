@@ -1,0 +1,40 @@
+.Studenti {
+
+    width: 70%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 5px 10px 18px darkgray;
+    margin: 0 auto;
+    height: 55vh;
+    overflow: auto;
+}
+.NoStudenti {
+    align-items: center;
+    justify-content: center;
+}
+.Filter{
+    padding: 5px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.FilterContainer {
+    margin: 5px;
+    display: flex;
+    width: auto;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font: inherit;
+    box-sizing: border-box;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+@media (max-width: 750px) {
+    .Studenti {
+        width: 100%;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,57 @@
+.SideItem {
+    list-style-type: none;
+}
+.ItemPadding {
+    padding: 5px 5px 5px 10px;
+}
+.Dropdown {
+    color: white;
+    font-size: 1.2rem;
+}
+.DropdownItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 5px 10px;
+}
+.DropdownItem:hover{
+    cursor: pointer;
+    background-color: #44ACDF;
+}
+.ItemIcon {
+    margin-right: 10px;
+}
+.RotateIcon {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.SideItem a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.SideItem a:hover{
+    color: white;
+}
+.CollapsibleMenu {
+    display: none;
+    background-color: #314253;
+}
+.Active {
+    background-color: #44ACDF;
+}
+.CollapsibleMenuActive {
+    display: flex;
+    flex-direction: column;
+    background-color: #31404f;
+}
+.CollapsibleMenuActive a{
+    padding: 5px;
+}
+.CollapsibleMenuActive a:hover{
+    background-color: #485f75;
+
+}

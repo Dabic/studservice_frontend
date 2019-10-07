@@ -1,0 +1,41 @@
+.Grupe {
+    border: 1px solid #eee;
+    box-shadow: 5px 10px 18px darkgray;
+    padding: 10px;
+    background-color: white;
+    width: 70%;
+    height: 55vh;
+    max-height: 70vh;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.NoGroups {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.Filter{
+    padding: 5px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.FilterContainer {
+    margin: 5px;
+    display: flex;
+    width: auto;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font: inherit;
+    box-sizing: border-box;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+@media (max-width: 750px) {
+    .Grupe {
+        width: 100%;
+        flex-grow: 1;
+    }
+}

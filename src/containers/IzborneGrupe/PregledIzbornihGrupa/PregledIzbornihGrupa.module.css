@@ -1,0 +1,10 @@
+.PregledIzbornihGrupa {
+    display: flex;
+    align-items: center;
+    background-color: #cccccc;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 10px 18px darkgray;
+    min-height: 75vh;
+    margin: auto auto;
+}

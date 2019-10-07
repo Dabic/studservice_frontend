@@ -1,0 +1,12 @@
+.Option {
+    background-color: #eeeeee;
+    padding: 5px;
+}
+.Option:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+.Option.Active {
+    background-color: #587087;
+    color: white;
+}

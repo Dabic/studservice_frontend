@@ -1,0 +1,38 @@
+.Modal {
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top:5%;
+    max-height: 90vh;
+    max-width: 80%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.ModalContent {
+    display: flex;
+    margin: auto;
+}
+.Exit {
+    position: absolute;
+    top: 13.5px;
+    right: 10px;
+    color: gray;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.Exit:hover {
+    cursor: pointer;
+}
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}

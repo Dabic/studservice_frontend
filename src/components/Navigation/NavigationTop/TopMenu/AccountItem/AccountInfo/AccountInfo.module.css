@@ -1,0 +1,25 @@
+.AccountInfo {
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 9px gray;
+    border: 0.5px solid #cccccc;
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    display: none;
+}
+.AccountInfo:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: #eeeeee;
+    border-top: 0;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+.Display {
+    display: block;
+}

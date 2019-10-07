@@ -1,0 +1,12 @@
+.PageTitle {
+    color: white;
+    font-size: 1.5rem;
+}
+.PageTitle {
+    margin: 0;
+}
+@media (max-width: 1000px){
+    .PageTitle {
+        display: none;
+    }
+}

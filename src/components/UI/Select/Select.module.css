@@ -1,0 +1,33 @@
+.Select {
+    border: 1px solid #cccccc;
+}
+.Placeholder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+.Placeholder:hover {
+    cursor: pointer;
+}
+.PlaceholderText {
+    font-size: 1rem;
+}
+.NoPlaceholder {
+    display: none;
+}
+.NoFilter {
+    display: none;
+}
+.Content {
+    background-color: #eeeeee;
+    max-height: 150px;
+    overflow: auto;
+}
+.EmptyList {
+    min-height: 150px;
+}
+.Collapse {
+    display: none;
+    overflow: hidden;
+}

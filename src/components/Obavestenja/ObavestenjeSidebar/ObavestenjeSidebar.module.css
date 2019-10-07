@@ -1,0 +1,36 @@
+.ObavestenjeSidebar {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    height: 100%;
+    background-color: #eeeeee;
+    z-index: 5;
+    opacity: 10%;
+    display: flex;
+}
+.ArrowContainer {
+    height: 100%;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #cccccc;
+    box-shadow: 5px 10px 18px darkgray;
+    opacity: 10%;
+}
+.ArrowContainer:hover {
+    cursor: pointer;
+}
+.Arrow {
+    color: black;
+    padding: 1px;
+    margin: 1px;
+    font-size: 1.3rem;
+}
+.ObavestenjeSidebar.Active {
+    width: 25vw;
+}
+.ObavestenjeSidebar.Active .ArrowContainer {
+    width: 30px;
+    justify-content: center;
+}
