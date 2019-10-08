@@ -9,7 +9,8 @@ const formState = {
         value: {value: 'parni', display: 'Parni semestar'},
         collapseContent: true,
         collapsed: true,
-        label: 'Odabir semestra'
+        label: 'Odabir semestra',
+        defaultValue: {value: 'parni', display: 'Parni semestar'}
     },
     sk_pocetak: {
         elementType: 'input',
@@ -45,7 +46,8 @@ const formState = {
         value: {value: 'RN', display: 'RN - Racunarske nauke'},
         collapseContent: true,
         collapsed: true,
-        label: 'Smer grupe'
+        label: 'Smer grupe',
+        defaultValue: {value: 'RN', display: 'RN - Racunarske nauke'}
     },
     oznaka_grupe: {
         elementType: 'input',
@@ -75,24 +77,18 @@ const formState = {
         elementType: 'sharable-lists',
         odabir_predmeta: [],
         odabrani_predmeti: [],
-        label: 'Predmeti grupe'
+        label: 'Predmeti grupe',
+        fieldset: true
     },
     aktivnost: {
         elementType: 'radio-group',
         options: [
-            {value: 'aktivna', display: 'Aktivna'},
-            {value: 'neaktivna', display: 'Neaktivna'}
+            {value: 'aktivna', display: 'Aktivna', checked: true},
+            {value: 'neaktivna', display: 'Neaktivna', checked: false}
         ],
         value: {value: 'aktivna', display: 'Aktivna'},
-        label: 'Aktivnost grupe'
+        label: 'Aktivnost grupe',
+        fieldset: true
     }
 }
-const formArray = []
-let key = null
-for(key in formState){
-    formArray.push({
-        id: key,
-        data: formState[key]
-    })
-}
-export default formArray
+export default formState

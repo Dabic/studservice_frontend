@@ -1,0 +1,50 @@
+.Default {
+    background-color: #E0E0E0;
+    font-size: 1.1rem;
+    border-radius: 10%;
+    padding: 5px 15px;
+    margin: 5px;
+    border: 0;
+}
+.Success {
+    color: #90CAF9;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border-radius: 10%;
+    padding: 5px 15px;
+    margin: 5px;
+    border: 0;
+}
+.Success:focus {
+    outline: none;
+}
+.Danger:focus {
+    outline: none;
+}
+.Danger {
+    color: #F48FB1;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border-radius: 10%;
+    padding: 5px 15px;
+    margin: 5px;
+    border: 0;
+}
+
+.Disabled {
+    background-color: #E0E0E0;
+    font-size: 1.1rem;
+    border-radius: 10%;
+    padding: 5px 15px;
+    margin: 5px;
+    border: 0;
+}
+@media (hover:hover) {
+    .Success:hover {
+        background-color: #edf7ff;
+        outline: none;
+    }
+    .Danger:hover {
+        background-color: #ffebf1;
+    }
+}

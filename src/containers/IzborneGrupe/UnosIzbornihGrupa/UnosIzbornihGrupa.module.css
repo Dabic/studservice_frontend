@@ -1,3 +1,10 @@
 .UnosIzbornihGrupa {
-
+    border: 1px solid #ccc;
+    box-shadow: 5px 10px 18px darkgray;
+    padding: 20px;
+}
+.Buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

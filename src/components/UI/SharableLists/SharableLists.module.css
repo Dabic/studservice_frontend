@@ -1,7 +1,11 @@
 .SharableLists {
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
-.SharableLists > div {
-    flex: 1;
+@media (max-width: 735px) {
+    .SharableLists {
+        flex-direction: column;
+    }
 }

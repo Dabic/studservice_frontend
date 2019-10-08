@@ -9,7 +9,7 @@ import Spisak from "../../components/Pregled/Spisak/Spisak";
 const SpisakStudenata = props => {
     const [key, setKey] = useState('po-grupama')
     const [showStudenti, setShowStudenti] = useState(false)
-    const [grupa, setGrupa] = useState({})
+
     const {getStudenti} = props
     useEffect(() => {
         getStudenti()
@@ -18,7 +18,7 @@ const SpisakStudenata = props => {
 
     const grupaOnClick = (grupa) => {
         props.getStudentiGrupa(grupa.oznaka_grupe)
-        setGrupa(grupa)
+
         setShowStudenti(true)
     }
     const closeSpisak = () => {

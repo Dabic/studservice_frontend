@@ -1,0 +1,8 @@
+.RadioItem {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.Label {
+    margin: 0 0 0 2px;
+}

@@ -6,10 +6,25 @@ import Filter from "../Filter/Filter";
 const Select = props => {
     const mainContentRef = useRef(null)
     const [selectValue, setSelectValue] = useState([])
+    const [filtered, setFiltered] = useState([])
     useEffect(() => {
         if(!props.multiple)
             setSelectValue(props.defaultValue)
-    }, [props])
+    }, [props.defaultValue, props.multiple])
+    useEffect(() => {
+        if(props.multiple)
+            setSelectValue(props.selected)
+    }, [props.selected, props.multiple])
+    useEffect(() => {
+        setFiltered(props.options)
+    }, [props.options])
+    const onFilterChange = (event) => {
+        const val = event.target.value.toUpperCase()
+        const newList = [...props.options].filter(item => {
+            return item.display.toUpperCase().indexOf(val) > -1
+        })
+        setFiltered(newList)
+    }
     const containsOption = (list, _option) => {
         return list.filter(option => option.value === _option.value).length > 0
     }
@@ -27,8 +42,7 @@ const Select = props => {
             }
             else
                 updatedState.push(clickedOption)
-            setSelectValue(updatedState)
-            //props.onChangeHandler(props.itemId, updatedState)
+            props.onChangeHandler(updatedState)
         }else{
             setSelectValue(clickedOption)
             props.onChangeHandler(props.itemId, clickedOption)
@@ -47,14 +61,14 @@ const Select = props => {
     let filterClasses = props.noFilter ? classes.NoFilter : ''
     let filter = (
         <div className={filterClasses}>
-            <Filter noBorder={true}/>
+            <Filter onChange={onFilterChange} noBorder={true}/>
         </div>
     )
     let contentClasses = props.emptyList ? [classes.Content, classes.EmptyList] : [classes.Content]
     let content = (
         <div className={contentClasses.join(' ')}>
             {
-                props.options.map(option => {
+                filtered.map(option => {
                     let active = null
                     if(props.multiple)
                         active = containsOption(selectValue, option)
@@ -64,8 +78,8 @@ const Select = props => {
         </div>
     )
     return (
-        <div>
-            <label>{props.label}</label>
+        <div className={classes.SelectWrapper}>
+            {props.label && <label className={classes.Label}>{props.label}</label>}
             <div className={classes.Select}>
                 {placeholder}
                 <div ref={mainContentRef} className={props.collapseContent ? classes.Collapse : null}>
