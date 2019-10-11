@@ -46,5 +46,6 @@
     }
     .Danger:hover {
         background-color: #ffebf1;
+        outline: none;
     }
 }

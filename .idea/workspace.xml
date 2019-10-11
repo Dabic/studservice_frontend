@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4a6979-dc01-4cb4-8dae-f0efe185751b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/RadioGroup/RadioGroup.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/RadioGroup/RadioItem/RadioItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/RadioGroup/RadioItem/RadioItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Strix.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Strix.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Fieldset/Fieldset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Fieldset/Fieldset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/RadioGroup/RadioGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/RadioGroup/RadioGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Option/Option.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Option/Option.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Control/Control.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Control/Control.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Fieldset/Fieldset.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Controls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Controls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/Controls/Controls.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SharableLists/SharableLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/SharableLists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SharableLists/SharableLists.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SharableLists/SharableLists.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/fromState/formState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/fromState/formState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/SpisakStudenata/SpisakStudenata.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SpisakStudenata/SpisakStudenata.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +44,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -129,6 +114,8 @@
       <workItem from="1570408000953" duration="24000" />
       <workItem from="1570408216202" duration="6852000" />
       <workItem from="1570464008647" duration="20903000" />
+      <workItem from="1570715796183" duration="275000" />
+      <workItem from="1570799833963" duration="8373000" />
     </task>
     <servers />
   </component>

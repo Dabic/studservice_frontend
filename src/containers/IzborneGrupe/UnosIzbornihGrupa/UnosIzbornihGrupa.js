@@ -15,7 +15,7 @@ const UnosIzbornihGrupa = props => {
     const [form, setForm] = useState(formState)
     const {getPredmeti} = {...props}
     const [error, setError] = useState(null)
-    const [submitting, setSubmitting] = useState(false)
+    const [disabled, setDisabled] = useState(true)
     const [grupa, setGrupa] = useState({})
     useEffect(() => {
         getPredmeti()
@@ -36,10 +36,64 @@ const UnosIzbornihGrupa = props => {
         setForm(updatedState)
     }, [props.svi_predmeti])
 
+    const checkValidityElement = (updatedElement, val) => {
+        let valid = true
+        for(let key in updatedElement.requirements) {
+            switch (key) {
+                case 'isNumber':
+                    valid =  !isNaN(val) && valid
+                    break
+                case 'isRequired':
+                    valid = val !== '' && valid
+                    break
+                case 'isGroup':
+                    const arr = val.split(',')
+
+                    for (let i = 0; i < arr.length; i++) {
+                        const gr = arr[i]
+                        if (gr.length !== 3 || (gr[0] < 1 || gr[0] > 4)) {
+                            valid = false
+                            break
+                        }
+                    }
+                    break
+                case 'isYear':
+                    valid = (!isNaN(val) && val.length === 4) && valid
+                    break
+                default:
+                    return true
+            }
+        }
+        return valid
+    }
+    const checkValidityForm = () => {
+        let valid = true
+        for(let key in form){
+            if(form[key].shouldValidate)
+                valid = form[key].valid && valid
+        }
+        return valid
+    }
     const onChangeHandler = (id, val) => {
         const updatedState = {...form}
-        updatedState[id].value = val
+        const updatedElement = updatedState[id]
+        updatedElement.value = val
+        updatedElement.touched = true
+        if(updatedElement.shouldValidate) {
+            updatedElement.valid = checkValidityElement(updatedElement, val)
+            if(updatedElement.valid && id === 'sk_pocetak') {
+                updatedState['sk_kraj'].value = parseInt(updatedElement.value) + 1
+                updatedState['sk_kraj'].valid = checkValidityElement(updatedState['sk_kraj'], (parseInt(updatedElement.value) + 1).toString())
+            }
+            else if(!updatedElement.valid && id === 'sk_pocetak')
+                updatedState['sk_kraj'].value = ''
+    }
+        updatedState[id] = updatedElement
         setForm(updatedState)
+        if(!checkValidityForm())
+            setDisabled('Disabled')
+        else
+            setDisabled('Success')
     }
     const getOdabir = () => {
         const updatedState = {...form}
@@ -95,7 +149,8 @@ const UnosIzbornihGrupa = props => {
             })
     }
     const resetForm = (event) => {
-        if (event)
+        console.log('a')
+
             event.preventDefault()
         const updatedForm = {...form}
         for (let key in updatedForm) {
@@ -119,7 +174,7 @@ const UnosIzbornihGrupa = props => {
         })
     }
     return (
-        <form className={classes.UnosIzbornihGrupa}>
+        <form onSubmit={onSubmit} className={classes.UnosIzbornihGrupa}>
             {
                 error !== null ?
                     <Modal show={true} modalClosed={() => setError(null)}>
@@ -137,6 +192,8 @@ const UnosIzbornihGrupa = props => {
                                 itemId={formItem.id}
                                 label={formItem.data.label}
                                 type={formItem.data.type}
+                                touched={formItem.data.touched}
+                                valid={formItem.data.valid}
                                 value={formItem.data.value}
                                 placeholder={formItem.data.placeholder}
                                 onChange={onChangeHandler}/>
@@ -181,7 +238,7 @@ const UnosIzbornihGrupa = props => {
                 })
             }
             <div className={classes.Buttons}>
-                <Button clicked={onSubmit} buttonType='Success'>UNESI</Button>
+                <Button clicked={onSubmit} buttonType={disabled}>UNESI</Button>
                 <Button clicked={resetForm} buttonType='Danger'>RESET</Button>
             </div>
         </form>

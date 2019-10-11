@@ -19,7 +19,9 @@ const formState = {
         shouldValidate: true,
         touched: false,
         requirements: {
-            isNumber: true
+            isRequired: true,
+            isNumber: true,
+            isYear: true
         },
         value: '',
         label: 'Skolska godina pocetak'
@@ -31,7 +33,9 @@ const formState = {
         shouldValidate: true,
         touched: false,
         requirements: {
-            isNumber: true
+            isRequired: true,
+            isNumber: true,
+            isYear: true
         },
         value: '',
         label: 'Skolska godina kraj'
@@ -56,6 +60,7 @@ const formState = {
         shouldValidate: true,
         touched: false,
         requirements: {
+            isRequired: true,
             isGroup: true
         },
         value: '',
@@ -68,6 +73,7 @@ const formState = {
         shouldValidate: true,
         touched: false,
         requirements: {
+            isRequired: true,
             isNumber: true
         },
         value: '',
