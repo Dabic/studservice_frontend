@@ -31,3 +31,7 @@ export {
 export {
     getPredmeti
 } from './predmeti_actions'
+
+export {
+    getCategories
+} from './email_actions'

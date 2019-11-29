@@ -10,12 +10,13 @@ import RadioGroup from "../../../components/UI/RadioGroup/RadioGroup";
 import Button from "../../../components/UI/Button/Button";
 import axios from "../../../api/axios/axios";
 import Modal from "../../../components/UI/Modal/Modal";
+import {formDataToArray} from '../../../utils/formUtils/formUtils'
 
 const UnosIzbornihGrupa = props => {
     const [form, setForm] = useState(formState)
     const {getPredmeti} = {...props}
     const [error, setError] = useState(null)
-    const [disabled, setDisabled] = useState(true)
+    const [disabled, setDisabled] = useState('Disabled')
     const [grupa, setGrupa] = useState({})
     useEffect(() => {
         getPredmeti()
@@ -141,16 +142,20 @@ const UnosIzbornihGrupa = props => {
         }
         axios.post('unos-grupe/', newGrupa, options)
             .then(response => {
+                console.log('res', response)
                 setError(null)
                 resetForm()
             })
             .catch(error => {
-                setError(error.response.data.error)
+                try {
+                   setError(error.response.data.error)
+                }catch (e) {
+                    setError(null)
+                }
             })
     }
     const resetForm = (event) => {
-        console.log('a')
-
+        if(event)
             event.preventDefault()
         const updatedForm = {...form}
         for (let key in updatedForm) {
@@ -166,13 +171,7 @@ const UnosIzbornihGrupa = props => {
         console.log(updatedForm)
         setForm(updatedForm)
     }
-    const frmArr = []
-    for (let key in form) {
-        frmArr.push({
-            id: key,
-            data: form[key]
-        })
-    }
+    const frmArr = formDataToArray(form)
     return (
         <form onSubmit={onSubmit} className={classes.UnosIzbornihGrupa}>
             {

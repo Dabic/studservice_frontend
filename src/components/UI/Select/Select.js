@@ -10,6 +10,9 @@ const Select = props => {
     useEffect(() => {
         if(!props.multiple)
             setSelectValue(props.defaultValue)
+        if(!props.defaultValue)
+            setSelectValue({display: 'Nacin slanja'})
+        console.log(props.defaultValue)
     }, [props.defaultValue, props.multiple])
     useEffect(() => {
         if(props.multiple)
@@ -72,6 +75,9 @@ const Select = props => {
                     let active = null
                     if(props.multiple)
                         active = containsOption(selectValue, option)
+                    else if(selectValue.value === option.value) {
+                        active = true
+                    }
                     return <Option active={active} key={option.value} onClickOption={onClickItem} option={option}/>
                 })
             }

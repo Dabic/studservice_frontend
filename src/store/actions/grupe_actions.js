@@ -44,9 +44,11 @@ export const removeIzborna = (grupa) => {
         }
         axios.post('obrisi-grupu/', grupa, options)
             .then(response => {
+                dispatch(getSveIzborne())
                 dispatch(getIzborne(grupa.oznaka_grupe[0]))
             })
     }
+
 }
 export const getIzborneSveStart = () => {
     return {

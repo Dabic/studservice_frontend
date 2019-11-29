@@ -19,7 +19,7 @@ const Spisak = props => {
                 props.vrsta === 'studenti' ?
                     <Studenti tip={props.tip}/>
                     :
-                    <Grupe sve={true} izborne={true}/>
+                    <Grupe grupaOnClick={props.grupaOnClick} sve={true} izborne={true}/>
             }
         </div>
     )

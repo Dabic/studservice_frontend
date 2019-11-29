@@ -2,13 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4a6979-dc01-4cb4-8dae-f0efe185751b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Vladimir_Dabic.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/studservice-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/studsevice-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/studsevice-logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachButton/AttachButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachButton/AttachButton.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachFile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachItem/AttachItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachItem/AttachItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/email_form_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionItem/SuggestionItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionItem/SuggestionItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagElement/TagElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagElement/TagElement.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagInput.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TextEditor/TextEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Email/Email.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Email/Email.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Obavestenja/UnosObavestenja/UnosObavestenja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Obavestenja/UnosObavestenja/UnosObavestenja.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Obavestenja/UnosObavestenja/fromState/formState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/email_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/email_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/formUtils/formUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideLogo/SideLogo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideLogo/SideLogo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pregled/Spisak/Spisak.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pregled/Spisak/Spisak.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/PregledIzbornihGrupa/PregledIzbornihGrupa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/PregledIzbornihGrupa/PregledIzbornihGrupa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/fromState/formState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/fromState/formState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SiteConf/AdminConf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SiteConf/AdminConf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/grupe_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/grupe_actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +75,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,17 +88,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Spinner" />
-      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Modal" />
-      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Backdrop" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vladimir Dabic\WebstormProjects\studservice_frontend\src\assets" />
       <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\containers\IzborneGrupe" />
       <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\Navigation\NavigationSide\SideMenu" />
       <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\assets" />
       <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\Navigation" />
-      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vladimir Dabic\WebstormProjects\studservice_frontend\src\assets" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Spinner" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Modal" />
+      <recent name="C:\Users\Strix\WebstormProjects\studservice_front-end\src\components\UI\Backdrop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -115,7 +157,15 @@
       <workItem from="1570408216202" duration="6852000" />
       <workItem from="1570464008647" duration="20903000" />
       <workItem from="1570715796183" duration="275000" />
-      <workItem from="1570799833963" duration="8373000" />
+      <workItem from="1570799833963" duration="8615000" />
+      <workItem from="1571155571895" duration="7787000" />
+      <workItem from="1571240561433" duration="1736000" />
+      <workItem from="1572028925475" duration="4706000" />
+      <workItem from="1572091701865" duration="1382000" />
+      <workItem from="1572638193751" duration="481000" />
+      <workItem from="1573564735934" duration="826000" />
+      <workItem from="1574954496987" duration="13781000" />
+      <workItem from="1575044881737" duration="13632000" />
     </task>
     <servers />
   </component>

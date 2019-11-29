@@ -51,4 +51,4 @@ const mapStateToProps = state => {
         loading: state.grupaReducer.loading
     }
 }
-export default connect(mapStateToProps, null)(Grupe)
+export default connect(mapStateToProps)(Grupe)

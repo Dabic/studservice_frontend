@@ -33,7 +33,7 @@ const PregledIzbornihGrupa = props => {
                 </Tab>
                 <Tab title='Sve grupe' eventKey='sve-grupe'>
                     <div className={classes.PregledIzbornihGrupa}>
-                        <Spisak vrsta='grupe'/>
+                        <Spisak grupaOnClick={grupaOnClick} vrsta='grupe'/>
                     </div>
                 </Tab>
             </Tabs>

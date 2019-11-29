@@ -11,6 +11,17 @@
     font-weight: bolder;
     font-size: 1.125rem;
 }
+.FileInput {
+    border: .5px solid #bababa;
+}
+.TextArea {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.TextAreaInput {
+    flex:1;
+}
 .Invalid {
     border: 2px solid salmon;
     background-color: salmon;

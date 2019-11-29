@@ -1,0 +1,12 @@
+.InputContainer {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+}
+.InputElement {
+    border: 0;
+    outline: none;
+    padding: 0 5px;
+    border-bottom: 1px solid lightgray;
+}

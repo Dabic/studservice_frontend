@@ -1,0 +1,22 @@
+.TagElement {
+    border: 1px solid lightgray;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 2px 5px;
+    background-color: #f7f7f7;
+}
+.TagElementText {
+    margin: 0;
+    font-size: 15px;
+}
+.TagElementDelete {
+    margin: 0 0 0 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.TagElementDelete:hover {
+    cursor: pointer;
+}
