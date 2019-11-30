@@ -2,54 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4a6979-dc01-4cb4-8dae-f0efe185751b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Vladimir_Dabic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/studservice-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/studsevice-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/studsevice-logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachButton/AttachButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachButton/AttachButton.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachFile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachFile.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachItem/AttachItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachItem/AttachItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailForm/email_form_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionItem/SuggestionItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionItem/SuggestionItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/SuggestionList/SuggestionList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagElement/TagElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagElement/TagElement.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagInput.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/TextEditor/TextEditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Email/Email.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Email/Email.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Obavestenja/UnosObavestenja/UnosObavestenja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Obavestenja/UnosObavestenja/UnosObavestenja.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Obavestenja/UnosObavestenja/fromState/formState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/email_actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/email_reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/formUtils/formUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideLogo/SideLogo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationSide/SideLogo/SideLogo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pregled/Grupe/Grupe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pregled/Spisak/Spisak.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pregled/Spisak/Spisak.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachFile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailForm/AttachFile/AttachFile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailForm/EmailForm.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/PregledIzbornihGrupa/PregledIzbornihGrupa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/PregledIzbornihGrupa/PregledIzbornihGrupa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/IzborneGrupe/UnosIzbornihGrupa/UnosIzbornihGrupa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/SiteConf/AdminConf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SiteConf/AdminConf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/grupe_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/grupe_actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/TagInput/TagInput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/TagInput/TagInput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Email/Email.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Email/Email.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Email/Email.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Email/Email.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +47,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,6 +128,9 @@
       <workItem from="1573564735934" duration="826000" />
       <workItem from="1574954496987" duration="13781000" />
       <workItem from="1575044881737" duration="13632000" />
+      <workItem from="1575058982648" duration="83000" />
+      <workItem from="1575069838200" duration="3215000" />
+      <workItem from="1575073064747" duration="251000" />
     </task>
     <servers />
   </component>

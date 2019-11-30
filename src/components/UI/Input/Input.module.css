@@ -20,7 +20,8 @@
     flex: 1;
 }
 .TextAreaInput {
-    flex:1;
+    flex: 1;
+    resize: none;
 }
 .Invalid {
     border: 2px solid salmon;

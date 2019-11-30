@@ -133,15 +133,17 @@ const EmailForm = props => {
         setAttachedFiles(newArray)
     }
     return (
-        <form>
+        <form className={classes.EmailForm}>
             {formArray.map((el, i) => {
                 if (el.data.elementType === 'input')
-                    return <Input key={i} type={el.data.type} placeholder={el.data.placeholder} value={el.data.value}/>
+                    return <Input key={i} itemId={el.id} type={el.data.type} placeholder={el.data.placeholder} value={el.data.value} onChange={changeHandler}/>
                 else if(el.data.elementType === 'tag-input')
                     return <TagInput key={i} item_id={el.id} typ={el.data.type} onChange={changeHandler} placeholder={el.data.placeholder} elements={tagElements}/>
                 else if (el.data.elementType === 'select')
                     return <Select
                         key={el.id}
+                        dontGrow={true}
+                        defaultBorder={true}
                         showPlaceholder={true}
                         multiple={false}
                         noFilter={true}
@@ -151,16 +153,20 @@ const EmailForm = props => {
             })}
             <div>
                 <input onChange={(event) => onFileAttached(event)} ref={fileInput} className={classes.EmailFormFileInput} type='file'/>
-                {
-                    attachedFiles.map((el, i) => {
-                        let pathArr = el.split('\\')
-                        let name = pathArr[pathArr.length-1]
-                        return <AttachItem key={i} clicked={() => deleteAttachedFile(i)} path={el} name={name}/>
-                    })
-                }
+                <div className={classes.AttachedFiles}>
+                    {
+                        attachedFiles.map((el, i) => {
+                            let pathArr = el.split('\\')
+                            let name = pathArr[pathArr.length-1]
+                            return <AttachItem key={i} clicked={() => deleteAttachedFile(i)} path={el} name={name}/>
+                        })
+                    }
+                </div>
             </div>
-            <Button buttonType='Success'>POSALJI</Button>
-            <AttachFile clicked={onAttachFile}/>
+            <div className={classes.Buttons}>
+                <div><AttachFile clicked={onAttachFile}/></div>
+                <div><Button buttonType='Success'>POSALJI</Button></div>
+            </div>
         </form>
     )
 }

@@ -2,6 +2,10 @@
     border: 1px solid #cccccc;
     margin-bottom: 10px;
 }
+.SelectDefaultBorder {
+    border: 1px solid #A9A9A9;
+    margin-bottom: 10px;
+}
 .Label {
     color: black;
     font-weight: bolder;

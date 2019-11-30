@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import * as actions from '../../store/actions/index'
 import SpinnerCircle from "../../components/UI/Spinner/SpinnerCircle/SpinnerCircle";
 import TagInput from "../../components/UI/TagInput/TagInput";
+import classes from './Email.module.css'
 
 const Email = props => {
     const [categories, setCategories] = useState([])
@@ -22,7 +23,7 @@ const Email = props => {
         return el.oznaka_grupe
     })
     return (
-        props.loading ? <SpinnerCircle/> : <EmailForm categories={categories} predmeti={predmetiArr} grupe={grupeArr}/>
+        props.loading ? <SpinnerCircle/> : <div className={classes.Email}><EmailForm categories={categories} predmeti={predmetiArr} grupe={grupeArr}/></div>
         //<div><TagInput elements={arr2}/></div>
     )
 }

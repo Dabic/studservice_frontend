@@ -84,9 +84,9 @@ const Select = props => {
         </div>
     )
     return (
-        <div className={classes.SelectWrapper}>
+        <div className={!props.dontGrow && classes.SelectWrapper}>
             {props.label && <label className={classes.Label}>{props.label}</label>}
-            <div className={classes.Select}>
+            <div className={props.defaultBorder ? classes.SelectDefaultBorder : classes.Select}>
                 {placeholder}
                 <div ref={mainContentRef} className={props.collapseContent ? classes.Collapse : null}>
                     {filter}
