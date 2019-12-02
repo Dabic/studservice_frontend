@@ -12,7 +12,6 @@ const Select = props => {
             setSelectValue(props.defaultValue)
         if(!props.defaultValue)
             setSelectValue({display: 'Nacin slanja'})
-        console.log(props.defaultValue)
     }, [props.defaultValue, props.multiple])
     useEffect(() => {
         if(props.multiple)
@@ -84,7 +83,7 @@ const Select = props => {
         </div>
     )
     return (
-        <div className={!props.dontGrow && classes.SelectWrapper}>
+        <div className={!props.dontGrow ? classes.SelectWrapper : undefined}>
             {props.label && <label className={classes.Label}>{props.label}</label>}
             <div className={props.defaultBorder ? classes.SelectDefaultBorder : classes.Select}>
                 {placeholder}

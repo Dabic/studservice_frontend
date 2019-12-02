@@ -25,7 +25,6 @@ const authWithServerSuccess = (state, data) => {
     updatedState.user = data.user
     updatedState.isAuthenticated = true
     updatedState.nalog = data.nalog
-    console.log(data.nalog)
     setLocalStorage(data.token, true, data.authenticatedAs, data.user, data.nalog)
     return updatedState
 }

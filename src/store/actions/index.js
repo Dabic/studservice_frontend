@@ -19,7 +19,8 @@ export {
     removeIzborna,
     getIzborne,
     getSveIzborne,
-    getGrupe
+    getGrupe,
+    getAllGrupe
 } from './grupe_actions'
 
 export {
@@ -35,3 +36,7 @@ export {
 export {
     getCategories
 } from './email_actions'
+
+export {
+    getAllNalozi
+} from './nalog_actions'

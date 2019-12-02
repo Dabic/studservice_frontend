@@ -118,3 +118,20 @@ export const getGrupe = (godina) => {
             })
     }
 }
+export const getAllGrupe = () => {
+    return dispatch => {
+        const options = {
+            headers: {
+                Authorization: localStorage.getItem('token')
+            }
+        }
+        dispatch(getGrupeStart())
+        axios.get(`grupe/`, options)
+            .then(response => {
+                dispatch(getGrupeSuccess(response.data))
+            })
+            .catch(error => {
+                dispatch(getGrupeFail(error))
+            })
+    }
+}

@@ -21,6 +21,7 @@ import grupaReducer from './store/reducers/grupe_reducer'
 import studentiReducer from './store/reducers/studenti_reducer'
 import predmetiReducer from './store/reducers/predmeti_reducer'
 import emailReducer from './store/reducers/email_reducer'
+import nalogReducer from './store/reducers/nalog_reducer'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const rootReducer = combineReducers({
@@ -30,7 +31,8 @@ const rootReducer = combineReducers({
     grupaReducer: grupaReducer,
     studentiReducer: studentiReducer,
     predmetiReducer: predmetiReducer,
-    emailReducer: emailReducer
+    emailReducer: emailReducer,
+    nalogReducer: nalogReducer
 })
 const store = createStore(
     rootReducer, composeEnhancers(applyMiddleware(ReduxThunk))

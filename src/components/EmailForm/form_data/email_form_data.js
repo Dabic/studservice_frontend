@@ -13,6 +13,7 @@ export const email_form = {
         type: 'text',
         shouldValidate: false,
         placeholder: 'Kome',
+        options: [],
         value: [],
         label: 'To: '
     },

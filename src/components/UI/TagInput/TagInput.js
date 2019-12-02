@@ -16,7 +16,9 @@ const TagInput = props => {
         if (text.length === 0)
             setFilteredSuggestions([])
         else
-            setFilteredSuggestions(suggestions.filter((el) => el.toUpperCase().indexOf(text.toUpperCase()) > -1))
+            setFilteredSuggestions(suggestions.filter((el) => el.toUpperCase().startsWith(text.toUpperCase())
+                || el.toUpperCase() === text.toUpperCase())
+            )
     }
     const addTag = tag => {
         const tagList = [...tags]

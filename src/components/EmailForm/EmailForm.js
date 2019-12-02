@@ -1,5 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
-import {email_form} from "./email_form_data";
+import {email_form} from "./form_data/email_form_data";
+import {smer_data} from "./form_data/smer_data";
+import {godine_data} from "./form_data/godine_data";
 import {formDataToArray} from "../../utils/formUtils/formUtils";
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
@@ -8,6 +10,8 @@ import Select from "../UI/Select/Select";
 import TagInput from "../UI/TagInput/TagInput";
 import classes from './EmailForm.module.css'
 import AttachItem from "./AttachFile/AttachItem/AttachItem";
+import CheckBoxGroup from "../UI/CheckBoxGroup/CheckBoxGroup";
+import axios from "../../api/axios/axios";
 
 const EmailForm = props => {
     const [formData, setFormData] = useState(email_form)
@@ -33,26 +37,28 @@ const EmailForm = props => {
         }
     }, [props.categories])
     const onChangeCategory = (id, option) => {
+        changeHandler(id, option)
         switch (option.value) {
             case 'Pojedinacno':
-                //setInputForPojedinacno()
+                setInputForPojedinacno()
+                setTagElements(props.nalozi)
                 break
             case 'Po grupama':
-                //setInputForGrupe()
+                setInputForGrupe()
                 setTagElements(props.grupe)
                 break
             case 'Po predmetima':
-                //setInputForPredmeti()
+                setInputForPredmeti()
                 setTagElements(props.predmeti)
                 break
             case 'Po godinama':
-                //setInputForGodine()
+                setInputForGodine()
                 break
             case 'Po smeru':
-                //setInputForSmer()
+                setInputForSmer()
                 break
             case 'Svi':
-                //setInputForSvi()
+                setInputForSvi()
                 break
             default:
                 break
@@ -62,7 +68,7 @@ const EmailForm = props => {
         const updatedState = {...formData}
         updatedState.to = {
             ...updatedState.to,
-            elementType: 'input'
+            elementType: 'tag-input'
         }
         setFormData(updatedState)
         setFormArray(formDataToArray(updatedState))
@@ -71,7 +77,7 @@ const EmailForm = props => {
         const updatedState = {...formData}
         updatedState.to = {
             ...updatedState.to,
-            elementType: 'none'
+            elementType: 'tag-input'
         }
         setFormData(updatedState)
         setFormArray(formDataToArray(updatedState))
@@ -80,7 +86,7 @@ const EmailForm = props => {
         const updatedState = {...formData}
         updatedState.to = {
             ...updatedState.to,
-            elementType: 'none'
+            elementType: 'tag-input'
         }
         setFormData(updatedState)
         setFormArray(formDataToArray(updatedState))
@@ -89,7 +95,8 @@ const EmailForm = props => {
         const updatedState = {...formData}
         updatedState.to = {
             ...updatedState.to,
-            elementType: 'none'
+            elementType: 'checkbox-group',
+            options: smer_data
         }
         setFormData(updatedState)
         setFormArray(formDataToArray(updatedState))
@@ -107,7 +114,8 @@ const EmailForm = props => {
         const updatedState = {...formData}
         updatedState.to = {
             ...updatedState.to,
-            elementType: 'none'
+            elementType: 'checkbox-group',
+            options: godine_data
         }
         setFormData(updatedState)
         setFormArray(formDataToArray(updatedState))
@@ -115,6 +123,17 @@ const EmailForm = props => {
     const changeHandler = (id, val) => {
         const updatedState = {...formData}
         updatedState[id].value = val
+        setFormData(updatedState)
+        setFormArray(formDataToArray(updatedState))
+    }
+    const checkBoxHandler = (id, index) => {
+        const updatedState = {...formData}
+        const options = updatedState[id].options
+        for(let i = 0; i < options.length; i++){
+            if(i === index)
+                options[i].checked = !options[i].checked;
+        }
+        updatedState[id].options = options
         setFormData(updatedState)
         setFormArray(formDataToArray(updatedState))
     }
@@ -142,6 +161,7 @@ const EmailForm = props => {
                 else if (el.data.elementType === 'select')
                     return <Select
                         key={el.id}
+                        itemId={el.id}
                         dontGrow={true}
                         defaultBorder={true}
                         showPlaceholder={true}
@@ -150,6 +170,8 @@ const EmailForm = props => {
                         options={el.data.options}
                         collapseContent={true}
                         onChangeHandler={onChangeCategory}/>
+                else if(el.data.elementType === 'checkbox-group')
+                    return <CheckBoxGroup key={el.id} itemId={el.id} onChange={checkBoxHandler} elements={el.data.options}/>
             })}
             <div>
                 <input onChange={(event) => onFileAttached(event)} ref={fileInput} className={classes.EmailFormFileInput} type='file'/>
@@ -165,10 +187,20 @@ const EmailForm = props => {
             </div>
             <div className={classes.Buttons}>
                 <div><AttachFile clicked={onAttachFile}/></div>
-                <div><Button buttonType='Success'>POSALJI</Button></div>
+                <div><Button clicked={(event) => {
+                    event.preventDefault()
+                    const options = {
+                        headers: {
+                            Authorization: localStorage.getItem('token')
+                        }
+                    }
+                    axios.post('send-email/', formData, options)
+                        .then(response => {
+                            console.log('res', response)
+                        })
+                }} buttonType='Success'>POSALJI</Button></div>
             </div>
         </form>
     )
 }
-
 export default EmailForm

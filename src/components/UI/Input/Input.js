@@ -18,7 +18,7 @@ const Input = props => {
             break
         case 'textarea':
             inputClasses.push(classes.TextAreaInput)
-            inputElement = <textarea className={inputClasses.join(' ')} placeholder={props.placeholder}/>
+            inputElement = <textarea className={inputClasses.join(' ')} onChange={(event) => props.onChange(props.itemId, event.target.value)} placeholder={props.placeholder}/>
             break
         case 'file':
             inputClasses.push(classes.FileInput)

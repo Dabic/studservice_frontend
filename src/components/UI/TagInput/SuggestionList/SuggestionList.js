@@ -8,7 +8,6 @@ const SuggestionList = props => {
     useEffect(() => {
         setSuggestions(props.suggestions)
         setFilteredSuggestions(props.filtered)
-        console.log(filteredSuggestions.length)
     }, [props.suggestions, props.filtered])
 
 
